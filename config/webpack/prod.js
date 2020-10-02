@@ -30,5 +30,8 @@ module.exports = merge(base, {
       filename: './css/[chunkhash].[name].css',
       chunkFilename: '[chunkhash].[id].css',
     }),
+    new Dotenv({
+      path: 'prod.env',
+    }),
   ],
 });
